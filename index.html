@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asyncio Examples - Corey Schafer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f9fa;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .header p {
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .examples {
+        list-style: none;
+      }
+
+      .example {
+        margin-bottom: 0.75rem;
+      }
+
+      .example a {
+        display: block;
+        padding: 1rem 1.25rem;
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.2s ease;
+      }
+
+      .example a:hover {
+        background: #e9ecef;
+        border-color: #5a6c7d;
+      }
+
+      .example-number {
+        font-weight: 600;
+        color: #5a6c7d;
+        font-size: 0.9rem;
+      }
+
+      .example-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0.25rem;
+        color: #2c3e50;
+      }
+
+      .back-link {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #eee;
+      }
+
+      .back-link a {
+        color: #5a6c7d;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .back-link a:hover {
+        color: #2c3e50;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 1.5rem;
+        }
+
+        .header h1 {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Asyncio Examples</h1>
+        <p>Python asynchronous programming demonstrations</p>
+      </header>
+
+      <ul class="examples">
+        <li class="example">
+          <a href="example_1.html">
+            <div class="example-number">Example 1</div>
+            <div class="example-title">
+              Synchronous Version (No AsyncIO or Event Loop)
+            </div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_2.html">
+            <div class="example-number">Example 2</div>
+            <div class="example-title">
+              Running Await Directly on a Coroutine
+            </div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_3.html">
+            <div class="example-number">Example 3</div>
+            <div class="example-title">
+              Schedule Tasks with asyncio.create_task
+            </div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_4.html">
+            <div class="example-number">Example 4</div>
+            <div class="example-title">Awaiting in Different Orders</div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_5.html">
+            <div class="example-number">Example 5</div>
+            <div class="example-title">Blocking the Event Loop</div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_6.html">
+            <div class="example-number">Example 6</div>
+            <div class="example-title">Running Threads and Processes</div>
+          </a>
+        </li>
+
+        <li class="example">
+          <a href="example_7.html">
+            <div class="example-number">Example 7</div>
+            <div class="example-title">
+              Different Ways to Schedule and Run Tasks
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
